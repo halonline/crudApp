@@ -13,7 +13,7 @@
 <body>
     <div class="container container-default">
   
-	   <h1>Student List Page Edit 1</h1>  
+	   <h1>Student List Page Edit 2</h1>  
 	    <table class="table table-striped">
 	        <thead>
 	            <tr>
