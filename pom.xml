@@ -7,6 +7,10 @@
 	<packaging>war</packaging>
 	<name>Simple crud app</name>
 	<description>CRUD application demo</description>
+	<properties>
+		<sonar.host.url>http://sonar.idexceldemo.com:9000</sonar.host.url>
+		<sonar.projectKey>thirumal-crud-app</sonar.projectKey>
+	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>javax.servlet</groupId>
