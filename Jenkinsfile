@@ -6,7 +6,7 @@ node
     stage ('compile using maven'){
         withSonarQubeEnv('Idexcel SonarQube Server')
          {
-        def maven = tool name: 'Maven', type: 'maven'
+        def maven = tool name: 'maven_3_6_0', type: 'maven'
         sh "${maven}/bin/mvn clean package sonar:sonar"
          }
     }
