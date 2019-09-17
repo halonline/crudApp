@@ -4,9 +4,9 @@ node
         checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/Thirumaleshwar/crudApp.git']]])
     }
     stage ('compile using maven'){
-        withSonarQubeEnv('Idexcel SonarQube Server')
+        withSonarQubeEnv('sonar')
          {
-        def maven = tool name: 'maven_3_6_0', type: 'maven'
+        def maven = tool name: 'Maven', type: 'maven'
         sh "${maven}/bin/mvn clean package sonar:sonar"
          }
     }
